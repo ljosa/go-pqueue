@@ -21,12 +21,12 @@
 // `failed` or `done` subdirectories, respectively. See the `Fail` and
 // `Finish` methods.
 //
-//  Jobs have state in the form of properties, which are really just
-//  files inside the job's directory. The `Get` and `Set` methods read
-//  these properties and set them atomically. Properties are set both
-//  by the process submitting a job (to specify the work that is to be
-//  done) and by workers (to checkpoint its progress so the job can
-//  continue if interrupted).
+// Jobs have state in the form of properties, which are really just
+// files inside the job's directory. The `Get` and `Set` methods read
+// these properties and set them atomically. Properties are set both
+// by the process submitting a job (to specify the work that is to be
+// done) and by workers (to checkpoint its progress so the job can
+// continue if interrupted).
 package pqueue
 
 import (
